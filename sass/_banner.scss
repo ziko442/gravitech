@@ -1,0 +1,157 @@
+/* -- Banner css
+-------------------------------------- -- */
+
+.banner {
+    position: relative;
+    &::before,
+    &::after {
+        content: " ";
+        $width: 68vw;
+        width: $width;
+        height: $width;
+        @extend .grad-style-cd;
+        transform: rotate(260deg);
+        position: absolute;
+        top: -40%;
+        right: -20%;
+        @include border-radius(50%);
+        outline: 1px solid transparent;
+        z-index: -2;
+    }
+    &::after {
+        background: #fff url(../images/banner/banner-round-img.jpg) center center no-repeat;
+        background-size: cover;
+        top: -46%;
+        right: -20%;
+        transform: rotate(0deg);
+        @include box-shadow(-5px, 0, 30px, rgba(0, 0, 0, .1));
+    }
+}
+
+.small-agency-home-header-bg {
+    &::after {
+        background: #fff url(../images/banner/banner-round-img-2.jpg) center center no-repeat;
+        background-size: cover;
+        background-position: calc(100% - 120px) 394px;
+        top: -46%;
+        right: -20%;
+    }
+}
+
+.banner-content {
+    padding: 280px 0 250px;
+    .custom-btn {
+        margin-top: 2rem;
+    }
+}
+
+.bg-shape {
+    position: absolute;
+    z-index: -1;
+    opacity: .9;
+    max-width: 100% !important;
+}
+
+.shape-home-banner {
+    left: 3%;
+    top: 19rem;
+}
+
+h1 {
+    margin-bottom: 1.1rem;
+}
+
+/* -- inner-page-banner css -- */
+
+.inner-page {
+    position: relative;
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 70vh;
+        display: block;
+        @extend .grad-style-ab;
+        z-index: 1;
+    }
+}
+
+.body-bg-style-2.inner-page {
+    &::before {
+        @extend .grad-style-cd;
+    }
+}
+
+.body-bg-style-3.inner-page {
+    &::before {
+        @extend .grad-style-ef;
+    }
+}
+
+.page-wrapper {
+    position: relative;
+    z-index: 2;
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        display: block;
+        background: linear-gradient(184deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 60%);
+    }
+}
+
+.inner-page-banner {
+    padding-top: 22.5rem;
+    padding-bottom: 3px;
+    margin-bottom: 6.5rem;
+    position: relative;
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 80px;
+        height: 3px;
+        margin-left: -40px;
+        background: #fff;
+        @include border-radius(10px);
+    }
+    h1 {
+        color: #fff;
+    }
+    p {
+        font-size: 2.4rem;
+        line-height: 4rem;
+        color: #fff;
+    }
+}
+
+.inner-banner-with-btn {
+    padding-bottom: 0;
+    &::after {
+        display: none;
+    }
+    .custom-btn {
+        margin-top: 2rem;
+    }
+}
+
+.inner-page-shape-banner-right {
+    left: auto;
+    right: -11%;
+    transform: rotate(90deg);
+    top: -6%;
+    opacity: .1;
+}
+
+.inner-page-shape-banner-left {
+    transform: rotate(90deg);
+    top: 5%;
+    opacity: .3;
+    left: -12%;
+}

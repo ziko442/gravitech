@@ -1,0 +1,38 @@
+/* -- Form css
+-------------------------------------- -- */
+
+::placeholder {
+    color: $typo-color-c !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $typo-color-c !important;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $typo-color-c !important;
+    opacity: 1;
+}
+
+input,
+textarea {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding: 1.5rem 2rem;
+    color: $typo-color-c;
+    background: transparent;
+    border: 2px solid #f1f0ff;
+    @include border-radius(5px);
+    transition: all .5s;
+    &:hover,
+    &:focus {
+        outline: none;
+        border-color: $theme-color-c;
+    }
+}

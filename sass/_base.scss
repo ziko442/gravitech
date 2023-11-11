@@ -1,0 +1,386 @@
+/* -- Base css
+-------------------------------------- -- */
+
+/* Classes for colors */
+
+.theme-color-a {
+    color: $theme-color-a;
+}
+
+.theme-color-b {
+    color: $theme-color-b;
+}
+
+.theme-color-c {
+    color: $theme-color-c;
+}
+
+.theme-color-d {
+    color: $theme-color-d;
+}
+
+.theme-color-e {
+    color: $theme-color-e;
+}
+
+.theme-color-f {
+    color: $theme-color-f;
+}
+
+.typo-color-a {
+    color: $typo-color-a;
+}
+
+.typo-color-b {
+    color: $typo-color-b;
+}
+
+.typo-color-c {
+    color: $typo-color-c;
+}
+
+/* Classes for background-color */
+
+.theme-bg-a {
+    background-color: $theme-color-a;
+}
+
+.theme-bg-b {
+    background-color: $theme-color-b;
+}
+
+.theme-bg-c {
+    background-color: $theme-color-c;
+}
+
+.theme-bg-d {
+    background-color: $theme-color-d;
+}
+
+.theme-bg-e {
+    background-color: $theme-color-e;
+}
+
+.theme-bg-f {
+    background-color: $theme-color-f;
+}
+
+.typo-bg-a {
+    background-color: $typo-color-a;
+}
+
+.typo-bg-b {
+    background-color: $typo-color-b;
+}
+
+.typo-bg-c {
+    background-color: $typo-color-c;
+}
+
+.grad-style-ab {
+    @include content-gradient(45deg, $theme-color-b, $theme-color-a);
+}
+
+.grad-style-cd {
+    @include content-gradient(45deg, $theme-color-d, $theme-color-c);
+}
+
+.grad-style-ef {
+    @include content-gradient(45deg, $theme-color-f, $theme-color-e);
+}
+
+.grad-style-ab-light {
+    @include content-gradient(45deg, #fcf1ff, #faefff);
+}
+
+.grad-style-cd-light {
+    @include content-gradient(45deg, #fff3f6, #fef5f5);
+}
+
+.grad-style-ef-light {
+    @include content-gradient(45deg, #f1efff, #f3f3ff);
+}
+
+.txt-grad-ab {
+    @include text-gradient(45deg, $theme-color-b, $theme-color-a);
+}
+
+.txt-grad-cd {
+    @include text-gradient(45deg, $theme-color-d, $theme-color-c);
+}
+
+.txt-grad-ef {
+    @include text-gradient(45deg, $theme-color-f, $theme-color-e);
+}
+
+/* -- Common css -- */
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1230px;
+}
+
+section {
+    position: relative;
+}
+
+.section-padding {
+    padding: 5rem 0 3.5rem;
+}
+
+.grey-bg {
+    background-color: $typo-color-a;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: #fff;
+    }
+}
+
+.light-grey-bg {
+    background-color: $light-grey-bg-color;
+}
+
+a,
+button,
+img,
+a:focus,
+button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.icon-container {
+    width: 135px;
+    height: 110px;
+    @include border-radius(110px);
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(150deg);
+    margin-bottom: 4.5rem;
+    position: relative;
+    i {
+        font-size: 5rem;
+        line-height: 1;
+        font-style: normal;
+        transform: rotate(-150deg);
+        transition: all .5s;
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include border-radius(110px);
+        z-index: -1;
+        opacity: 0;
+        transition: all .5s;
+    }
+    &.grad-style-cd-light::after {
+        @extend .grad-style-cd;
+    }
+    &.grad-style-ab-light::after {
+        @extend .grad-style-ab;
+    }
+    &.grad-style-ef-light::after {
+        @extend .grad-style-ef;
+    }
+}
+
+.slick-track {
+    @include flexbox();
+    @include flex-wrap(wrap);
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+.slick-arrow {
+    width: 60px;
+    height: 30px;
+    display: block;
+    top: auto;
+    bottom: -78px;
+    background-color: red;
+    transition: all .3s;
+}
+
+.slick-prev {
+    background: url(../images/icon/slick-arrow-left.png) center center no-repeat;
+    left: auto;
+    right: 60px;
+}
+
+.slick-next {
+    background: url(../images/icon/slick-arrow-right.png) center center no-repeat;
+    left: auto;
+    right: 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+    background: url(../images/icon/slick-arrow-left.png) center center no-repeat;
+}
+
+.slick-next:hover,
+.slick-next:focus {
+    background: url(../images/icon/slick-arrow-right.png) center center no-repeat;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: .5;
+}
+
+.modal {
+    z-index: 99999999;
+    background: #fef4f5;
+    padding: 60px 15px !important;
+}
+
+.modal-header {
+    border: none;
+    padding: 0;
+}
+
+.modal-dialog {
+    width: 100%;
+    max-width: 1230px;
+}
+
+.modal .modal-content {
+    padding: 75px 75px 40px;
+    @include border-radius(10px);
+    overflow: hidden;
+    border: none;
+    z-index: 1;
+    h3 {
+        margin-bottom: 15px;
+        span {
+            display: block;
+            font-family: $primary-font;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: $typo-color-c;
+            font-weight: 300;
+            margin-bottom: 4px;
+        }
+    }
+    h4 {
+        span {
+            display: block;
+            font-family: $primary-font;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: $typo-color-c;
+            font-weight: 300;
+            margin-bottom: 4px;
+        }
+    }
+    p {
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.get-a-quote-modal .modal-content {
+    background-color: transparent;
+    padding: 20px 0;
+}
+
+.get-a-quote-modal .contact-wrapper.contact-page-form-wrapper,
+.get-a-quote-modal .contact-info.floating-contact-info {
+    margin-bottom: 0;
+}
+
+.get-a-quote-modal .contact-wrapper h3 {
+    margin-bottom: 3.2rem;
+}
+
+a:hover {
+    color: $theme-color-c;
+}
+
+.modal.show .modal-dialog {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal button.close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.6rem;
+    span {
+        display: none;
+    }
+}
+
+.get-a-quote-modal button.close {
+    right: 9rem;
+    z-index: 9;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .6;
+    transform: translate(-50%, -50%);
+}
+
+.modal-feat-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.8rem;
+    @include border-radius(10px);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    transition: all .5s;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    background: $typo-color-a;
+    @include border-radius(50%);
+    opacity: .5;
+    transition: all .5s;
+    cursor: pointer;
+    &.active {
+        background: $typo-color-a;
+        opacity: 1;
+    }
+}

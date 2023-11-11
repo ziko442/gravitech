@@ -1,0 +1,67 @@
+/*-- ===============================================
+
+Product: 'Cynic || Trendy HTML Template for Digital Agencies'
+Version: 3.0.1 
+Author: axilweb
+Date Created: July 16, 2018
+
+==================================================== --*/
+
+/*-- == Table of contents =====================
+
+( Example: Type 'ctrl+f' and then '1.example' to jump to the
+ "example" section. Click 'find' if needed.)
+ 
+1. Custom Animations
+2. Base css
+3. Common css
+4. Spacing
+5. Typography
+6. Button css
+7. Form css
+8. Header css
+9. Banner css
+10. Services css
+11. About css
+12. Featuered Projects css
+13. Case-study css
+14. Team css
+15. Pricing css
+16. Clients css
+17. Latest News css
+18. Newsletter css
+19. Contact css
+20. Footer css
+
+
+================================================== --*/
+
+/* -- Imported Fonts
+-------------------------------------- -- */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,300i,400,400i,500,500i,600,700,800,900|Hind+Vadodara:300,400,500,600,700');
+// Sass Files to Import
+//Common files
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'spacing';
+@import 'typography';
+@import 'button';
+@import 'form';
+//Home
+@import 'header';
+@import 'banner';
+@import 'services';
+@import 'about';
+@import 'projects';
+@import 'case-study';
+@import 'team';
+@import 'pricing';
+@import 'clients';
+@import 'latest-news';
+@import 'newsletter';
+@import 'contact';
+@import 'footer';
+//Browser fixes
+@import 'browserhack';

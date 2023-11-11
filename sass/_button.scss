@@ -1,0 +1,92 @@
+/* -- Button css
+-------------------------------------- -- */
+
+.custom-btn {
+    max-width: 100%;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    @include border-radius(50px);
+    vertical-align: middle;
+    white-space: nowrap;
+    user-select: none;
+    transition: all .5s;
+}
+
+.navbar-nav .nav-link.custom-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.btn-big {
+    font-size: 1.6rem;
+    line-height: 30px;
+    padding: 1.6rem 3rem;
+}
+
+.btn-mid {
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 1rem 3rem;
+}
+
+.btn-small {
+    font-size: 1.3rem;
+    line-height: 30px;
+    padding: .5rem 2.5rem;
+}
+
+.btn-full {
+    width: 100%;
+    max-width: 39rem;
+}
+
+.custom-btn:hover,
+.custom-btn.active {
+    text-decoration: none;
+    color: #fff;
+    @include box-shadow(0, 2px, 5px, rgba(0, 0, 0, .2));
+    transform: translateY(-2px);
+}
+
+.video-play-btn {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #fff;
+    @include border-radius(50%);
+    @include box-shadow(0, 2px, 10px, rgba(0, 0, 0, .2));
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+    padding-left: 7px;
+    color: $theme-color-e;
+    transition: all .5s;
+    outline: none;
+    &:hover {
+        color: $theme-color-e;
+        @include box-shadow(0, 2px, 50px, rgba(0, 0, 0, .1));
+    }
+    svg {
+        margin-right: 5px;
+    }
+}
+
+.text-only-btn {
+    display: inline-block;
+    color: $theme-color-e;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .5s;
+    margin-bottom: .7rem;
+    i {
+        vertical-align: middle;
+        margin-left: .5rem;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

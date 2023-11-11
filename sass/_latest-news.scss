@@ -1,0 +1,155 @@
+/* -- Latest News css
+-------------------------------------- -- */
+
+.light-grey-grad {
+	@include content-gradient(to bottom, #fcfdff, #f9fcff);
+}
+
+.news-slider {
+	padding-bottom: 6rem;
+	.item {
+		margin-bottom: 3rem;
+		outline: none;
+		border: none;
+		h5 {
+			padding: 2rem 3rem 2.1rem;
+			background: #fff;
+			margin-bottom: 0;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			span {
+				margin-top: 0;
+			}
+		}
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
+}
+
+.news-modal {
+	.modal-content {
+		padding-bottom: 5.6rem;
+	}
+	.modal-dialog {
+		max-width: 1020px;
+	}
+}
+
+.blog-details-related-post {
+	padding-bottom: .5rem;
+}
+
+.blog-by-category {
+	padding-bottom: .5rem;
+	&.single-cat {
+		padding-bottom: 0;
+	}
+	.custom-btn {
+		margin-bottom: 6rem;
+	}
+}
+
+.blog-grid {
+	.item {
+		margin-bottom: 6rem;
+	}
+	.content-block h5 {
+		padding: 2rem 3rem 2.1rem;
+		margin-bottom: 0;
+		background: #fff;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+}
+
+.article-wrapper {
+	padding-bottom: 2.5rem;
+}
+.blog-post-details{
+	position: relative;
+}
+.shape-blog-details{
+	top: 40%;
+	right: -20%;
+}
+.blog-details {
+	padding: 5.9rem 0 3.8rem;
+	h2 {
+		margin-bottom: 1.1rem;
+		span {
+			font-size: 1.8rem;
+			line-height: 2.6rem;
+			color: $typo-color-c;
+			display: block;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+	}
+	.social-icons {
+		margin-bottom: 1.7rem;
+		a {
+			background: #f1efff;
+			color: $theme-color-e;
+		}
+	}
+	img {
+		margin: 3.9rem 0 5.8rem;
+		@include border-radius(10px);
+	}
+}
+
+.post-info {
+	margin-bottom: 3.1rem;
+	a {
+		font-size: 1.8rem;
+		line-height: 3rem;
+		color: $typo-color-c;
+		text-decoration: none;
+		margin-right: 2rem;
+		transition: all .5s;
+		i {
+			margin-right: 1rem;
+			vertical-align: -2px;
+		}
+		&:hover {
+			color: $theme-color-c;
+		}
+	}
+}
+
+.article-inner-title {
+	margin: 4.6rem 0 2.7rem;
+}
+
+.author-details {
+	padding: 5rem 0 3.8rem;
+	h2 {
+		margin-bottom: 3.3rem;
+	}
+}
+
+.author-thumbnail {
+	margin-right: 3rem;
+}
+
+.blog-details-prev-next {
+	margin-bottom: 3.8rem;
+	a {
+		font-family: $secondary-font;
+		font-size: 1.8rem;
+		line-height: 1;
+		font-weight: 700;
+		color: $typo-color-c;
+		text-decoration: none;
+		transition: all .5s;
+		i {
+			vertical-align: -1px;
+			margin-right: .5rem;
+		}
+		&:hover {
+			color: $theme-color-e;
+		}
+	}
+}

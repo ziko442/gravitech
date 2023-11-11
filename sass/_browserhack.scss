@@ -1,0 +1,101 @@
+/* -- Browser Hacks
+---------------------------------- -- */
+
+/* -- Chrome hacks -- */
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    textarea+.err-msg {
+        bottom: 13px;
+    }
+    .success-msg {
+        bottom: 12px;
+    }
+}
+
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) and (max-width: 1199px) {
+    html {
+        overflow-x: initial;
+    }
+    .modal {
+        padding: 0 15px !important;
+    }
+}
+
+/* -- Firefox hacks -- */
+
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+    .nav-tabs .nav-item:not(:last-child) .nav-link:hover::after,
+    .nav-tabs .nav-item:not(:last-child) .nav-link.active::after,
+    .service-tab-nav .visited .nav-link::after {
+        color: #6245fe;
+    }
+}
+
+/* -- IE hacks -- */
+
+@media screen and (min-width:0\0) {
+    .txt-grad-ef,
+    .common-list-items li i,
+    .service-tab-nav .nav-link:hover i,
+    .service-tab-nav .nav-link:hover span,
+    .service-tab-nav .nav-link.active i,
+    .service-tab-nav .nav-link.active span,
+    .service-tab-nav .nav-item:not(:last-child) .nav-link:hover::after,
+    .service-tab-nav .nav-item:not(:last-child) .nav-link.active::after,
+    .service-tab-nav .visited .nav-link::after,
+    .filter-button:hover,
+    .filter-button.is-checked {
+        background: transparent;
+        color: $theme-color-e;
+    }
+    .txt-grad-cd {
+        color: $theme-color-c;
+        background: transparent;
+        transition: all .3s;
+    }
+    .txt-grad-ab {
+        color: $theme-color-a;
+        background: transparent;
+        transition: all .3s;
+    }
+    .txt-grad-ef {
+        color: $theme-color-e;
+        background: transparent;
+        transition: all .3s;
+    }
+    .content-block:hover {
+        .txt-grad-cd {
+            color: #fff;
+        }
+        .txt-grad-ab {
+            color: #fff;
+        }
+        .txt-grad-ef {
+            color: #fff;
+        }
+    }
+    .filter-button:hover,
+    .filter-button.is-checked {
+        color: #6245fe;
+        background: transparent;
+    }
+    .pricing-block:hover .price {
+        color: #ff7cb0;
+        background: transparent;
+    }
+    .modal {
+        padding: 0 !important;
+    }
+    .modal-dialog-centered {
+        width: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .featured-project-modal .modal-content {
+        padding: 75px 75px 52px;
+    }
+}

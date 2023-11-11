@@ -1,0 +1,75 @@
+/* -- Pricing starts
+-------------------------------- -- */
+
+.pricing {
+    background: url(../images/pricing-bg-shape.png) center calc(100% + 420px) no-repeat;
+    background-size: 100% auto;
+}
+
+.pricing-wrapper {
+    padding-top: 102px;
+    [class^="col-"] {
+        margin-bottom: 3rem;
+    }
+}
+
+.pricing-block {
+    padding: 9.5rem 4rem 4rem;
+    position: relative;
+    &::after {
+        display: none;
+    }
+    .icon-container {
+        position: absolute;
+        left: 50%;
+        top: -90px;
+        transform: rotate(150deg) translateX(50%);
+    }
+    .price {
+        font-family: $secondary-font;
+        font-size: 6rem;
+        line-height: 1.6;
+        font-weight: 900;
+        padding-top: 2px;
+        padding-bottom: 3px;
+    }
+    div,
+    h6 {
+        width: 100%;
+    }
+    .custom-btn {
+        width: 100%;
+        margin-top: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover {
+        .price {
+            @extend .txt-grad-cd;
+        }
+        .custom-btn {
+            @extend .grad-style-cd;
+        }
+        .icon-container::after {
+            @extend .grad-style-cd;
+        }
+    }
+}
+
+.facilities>div {
+    font-weight: 400;
+    line-height: 3rem;
+    padding: 1.7rem 0;
+    border-bottom: 2px solid #edf7ff;
+    &:last-child {
+        margin-bottom: 4rem;
+    }
+}
+
+.inner-page-pricing {
+    background: transparent;
+    .pricing-wrapper {
+        padding-top: 128px;
+        padding-bottom: 3.5rem;
+    }
+}

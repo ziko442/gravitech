@@ -1,0 +1,138 @@
+/* -- Header css
+-------------------------------------- -- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 15px;
+    background-color: transparent;
+    z-index: 99998;
+    transition: all .5s;
+    &.scrolled {
+        background: #fff;
+        z-index: 999;
+        padding: 15px;
+        @include box-shadow(0, 0, 10px, rgba(166, 209, 237, 0.3));
+        .navbar-brand {
+            img {
+                width: 80%;
+            }
+        }
+        .navbar-nav .custom-dropdown-menu {
+            top: 125%;
+        }
+    }
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
+    .nav-item {
+        margin-left: 3rem;
+        .nav-link:not(.custom-btn) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: inherit;
+            margin: 0;
+            padding: 15px 0;
+            text-transform: uppercase;
+            transition: all .3s;
+            font-weight: 500;
+            &:hover,
+            &.active {
+                color: $typo-color-a;
+            }
+        }
+    }
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: $primary-font;
+}
+
+.navbar-brand {
+    padding: 0;
+    img {
+        transition: all .5s;
+    }
+}
+
+.navbar.solid-bg {
+    background: #fff;
+    @include box-shadow(0, 0, 10px, rgba(166, 209, 237, 0.3));
+}
+
+// Banner css
+.navbar-toggler {
+    border: none;
+    outline: none;
+    padding: 0;
+    span {
+        width: 3rem;
+        height: .3rem;
+        @include border-radius(20px);
+        display: block;
+        @extend .grad-style-cd;
+        margin: .6rem 0;
+        &.navbar-toggler-icon {
+            display: none;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.navbar button .custom-toggler-icon {
+    transition: all .5s;
+}
+
+.navbar button.change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.navbar button.change .bar2 {
+    opacity: 0;
+}
+
+.navbar button.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -6px);
+}
+.navbar .dropdown > a{
+    &::after {
+        content: "\f182";
+        font-family: 'miniline' !important;
+        font-size: 12px;
+        margin-left: 2px;
+    }
+}
+.navbar-nav .custom-dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 152%;
+    background-color: #fff;
+    border: none;
+    padding: 15px 0;
+    border-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 2px solid $theme-color-c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    transition-timing-function: linear !important;
+}
+
+.dropdown-item {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $typo-color-c;
+    padding: 5px 25px;
+    transition: all .5s;
+    &:hover,
+    &.active {
+        background-color: transparent;
+        color: $typo-color-a;
+    }
+}

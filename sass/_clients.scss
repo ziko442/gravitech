@@ -1,0 +1,17 @@
+/* -- Clients
+-------------------------------- -- */
+
+.clients-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.clients {
+    .client {
+        max-width: 20%;
+        flex: 0 0 20%;
+        text-align: center;
+        margin: 25px 0;
+        @include align-self(center);
+    }
+}
