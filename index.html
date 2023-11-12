@@ -89,7 +89,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-md-auto typo-color-c align-items-center">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown d-none">
                         <a class="nav-link dropdown-opener" href="#">
                             Services
                         </a>
@@ -102,22 +102,22 @@
                             <a class="dropdown-item" href="social-media-marketing.html">Social Media Marketing</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <a class="nav-link" href="case-studies.html">Case Studies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About</a>
+                        <a class="nav-link" href="#about-us">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">Team</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
@@ -151,9 +151,9 @@
             <div class="banner-content">
                 <h1>Business Goals
                     <br>Achieved with Design</h1>
-                <p class="section-subheading">Praesent rhoncus, felis nec accumsan mattis, urna urna
-                    <br>laoreet acus vel ultrices.</p>
-                <a href="portfolio.html" class="custom-btn btn-big grad-style-ef page-scroll">OUR PORTFOLIO</a>
+                <p class="section-subheading">Transformons la puissance du code en opportunités concrètes pour nos clients,<br/>
+                     dessinant ainsi l'avenir numérique main dans la main.</p>
+                <a href="portfolio.html" class="custom-btn btn-big grad-style-ef page-scroll d-none">OUR PORTFOLIO</a>
             </div>
             <!-- End of .banner-content -->
         </div>
@@ -163,7 +163,8 @@
 
     <!-- Services starts
     ======================================= -->
-    <section class="services">
+    
+    <section class="services d-none">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 m-b-30">
@@ -254,11 +255,12 @@
         </div>
         <!-- End of .container -->
     </section>
+    
     <!-- End of .services -->
 
     <!-- about-us
     ======================================= -->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <svg class="bg-shape shape-about reveal-from-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             width="779px" height="759px">
             <defs>
@@ -280,11 +282,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 ml-auto">
-                    <h2>We Lead from the Front</h2>
-                    <p>Aenean consectetur massa quis sem volutpat, a condimentum tortor pretium. Cras id ligula consequat, sagittis
-                        nulla at, sollicitudin lorem. Orci varius natoque penatibus et magnis dis parturient montes.</p>
-                    <p>Cras id ligula consequat, sagittis nulla at, sollicitudin lorem. Orci varius natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Phasellus eleifend, dolor vel condimentum imperdiet.</p>
+                    <h2>De l'idée à la réalité, nous façonnons votre Succès</h2>
+                    <p>Chez <b>GraviTech</b>, nous ne sommes pas juste des innovateurs, nous sommes des créateurs d'opportunités.
+                        Chaque projet est une nouvelle aventure où la confiance se transforme en résultats. Découvrez une approche
+                        collaborative où votre ambition rencontre notre expertise, propulsant votre entreprise vers de nouveaux sommets.
+                        Ensemble, nous écrivons le code du succès.</p>
                     <div class="counter-wrapper d-flex justify-content-between">
                         <div class="inner-block">
                             <div class="counter-block d-block txt-grad-ef">
@@ -319,7 +321,7 @@
 
     <!-- featured-projects
     ======================================= -->
-    <section class="featured-projects section-padding">
+    <section class="featured-projects section-padding" id="services">
         <svg class="bg-shape shape-project reveal-from-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             width="779px" height="759px">
             <defs>
@@ -333,9 +335,9 @@
             />
         </svg>
         <div class="container">
-            <h2 class="text-center">Our Impressive Portfolio</h2>
+            <h2 class="text-center">Nos Services Impressionnants</h2>
             <p class="section-subheading text-center">
-                Cras ex odio, luctus vel rhoncus quis, pellentesque a urna.
+                Plus qu'une startup, un partenaire pour votre croissance.
             </p>
 
             <div class="featured-project-showcase text-center">
@@ -343,95 +345,97 @@
 
                     <!-- Items for portfolio currently using 12 items.
                         More Items can be added. -->
-                    <div class="grid-item col-md-6 col-lg-4">
-                        <a href="#" class="featured-content-block content-block" data-toggle="modal" data-target="#featured-project-modal">
+                    <div class="grid-item col-md-6 col-lg-4" id="web-design">
+                        <div class="featured-content-block content-block">
                             <div class="img-container">
-                                <img src="images/featured-projects/featured-project-1.jpg" alt="Project image" class="img-fluid">
+                                <img src="images/featured-projects/featured-1.jpg" alt="Project image" class="img-fluid">
                             </div>
                             <!-- End of .img-container -->
                             <h5 class="equalHeight">
                                 <span class="content-block__sub-title">Web Design</span>
                                 Creative Web Design
                             </h5>
-                        </a>
+                        </div>
                         <!-- End of .featured-content-block -->
                     </div>
                     <!-- End of .grid-item -->
                     <div class="grid-item col-md-6 col-lg-4">
-                        <a href="#" class="featured-content-block content-block" data-toggle="modal" data-target="#featured-project-modal">
+                        <div class="featured-content-block content-block">
                             <div class="img-container">
-                                <img src="images/featured-projects/featured-project-2.jpg" alt="Project image" class="img-fluid">
+                                <img src="images/featured-projects/featured-2.jpg" alt="Project image" class="img-fluid">
                             </div>
                             <!-- End of .img-container -->
                             <h5 class="equalHeight">
-                                <span class="content-block__sub-title">Web Design</span>
-                                Complex Deshboard
+                                <span class="content-block__sub-title">Web Apps</span>
+                                Web Development 
                             </h5>
-                        </a>
+                        </div>
                         <!-- End of .featured-content-block -->
                     </div>
                     <!-- End of .grid-item -->
                     <div class="grid-item col-md-6 col-lg-4">
-                        <a href="#" class="featured-content-block content-block" data-toggle="modal" data-target="#featured-project-modal">
+                        <div class="featured-content-block content-block">
                             <div class="img-container">
-                                <img src="images/featured-projects/featured-project-3.jpg" alt="Project image" class="img-fluid">
+                                <img src="images/featured-projects/featured-3.jpg" alt="Project image" class="img-fluid">
                             </div>
                             <!-- End of .img-container -->
                             <h5 class="equalHeight">
-                                <span class="content-block__sub-title">App Design</span>
-                                Food App Design
+                                <span class="content-block__sub-title">Mobile Apps</span>
+                                Mobile Development
                             </h5>
-                        </a>
+                        </div>
                         <!-- End of .featured-content-block -->
                     </div>
                     <!-- End of .grid-item -->
                     <div class="grid-item col-md-6 col-lg-4">
-                        <a href="#" class="featured-content-block content-block" data-toggle="modal" data-target="#featured-project-modal">
+                        <div class="featured-content-block content-block">
                             <div class="img-container">
-                                <img src="images/featured-projects/featured-project-4.jpg" alt="Project image" class="img-fluid">
+                                <img src="images/featured-projects/featured-4.jpg" alt="Project image" class="img-fluid">
                             </div>
                             <!-- End of .img-container -->
                             <h5 class="equalHeight">
-                                <span class="content-block__sub-title">Web Design</span>
-                                Digital Agency
+                                <span class="content-block__sub-title">Data</span>
+                                Data Analytics
                             </h5>
-                        </a>
-                        <!-- End of .featured-content-block -->
-                    </div>
-                    <!-- End of .grid-item -->
-
-                    <div class="grid-item col-md-6 col-lg-4">
-                        <a href="#" class="featured-content-block content-block" data-toggle="modal" data-target="#featured-project-modal">
-                            <div class="img-container">
-                                <img src="images/featured-projects/featured-project-5.jpg" alt="Project image" class="img-fluid">
-                            </div>
-                            <!-- End of .img-container -->
-                            <h5 class="equalHeight">
-                                <span class="content-block__sub-title">Web Design</span>
-                                Agency Web Application
-                            </h5>
-                        </a>
+                        </div>
                         <!-- End of .featured-content-block -->
                     </div>
                     <!-- End of .grid-item -->
 
                     <div class="grid-item col-md-6 col-lg-4">
-                        <a href="#" class="featured-content-block content-block" data-toggle="modal" data-target="#featured-project-modal">
+                        <div class="featured-content-block content-block">
                             <div class="img-container">
-                                <img src="images/featured-projects/featured-project-6.jpg" alt="Project image" class="img-fluid">
+                                <img src="images/featured-projects/featured-5.jpg" alt="Project image" class="img-fluid">
                             </div>
                             <!-- End of .img-container -->
                             <h5 class="equalHeight">
-                                <span class="content-block__sub-title">Web Design</span>
-                                Digital Agency
+                                <span class="content-block__sub-title">Software Development</span>
+                                Software Development
                             </h5>
-                        </a>
+                        </div>
+                        <!-- End of .featured-content-block -->
+                    </div>
+                    <!-- End of .grid-item -->
+
+                    <div class="grid-item col-md-6 col-lg-4">
+                        <div class="featured-content-block content-block">
+                            <div class="img-container">
+                                <img src="images/featured-projects/featured-6.jpg" alt="Project image" class="img-fluid">
+                            </div>
+                            <!-- End of .img-container -->
+                            <h5 class="equalHeight">
+                                <span class="content-block__sub-title">Marketing</span>
+                                Social Media Marketing
+                            </h5>
+                        </div>
                         <!-- End of .featured-content-block -->
                     </div>
                     <!-- End of .grid-item -->
                 </div>
                 <!-- End of .grid -->
-                <a href="portfolio.html" class="custom-btn btn-big grad-style-ef btn-full">DISCOVER MORE WORKS</a>
+
+                <!-- <a href="portfolio.html" class="custom-btn btn-big grad-style-ef btn-full">DISCOVER MORE WORKS</a> -->
+            
             </div>
             <!-- End of .template-showcase -->
         </div>
@@ -441,7 +445,7 @@
 
     <!-- case-study starts
     ======================================= -->
-    <section class="case-study small-agency-case-study">
+    <section class="case-study small-agency-case-study d-none">
         <svg class="bg-shape shape-case reveal-from-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             width="779px" height="759px">
             <defs>
@@ -513,7 +517,7 @@
 
     <!-- Partners starts
     ======================================= -->
-    <div class="clients">
+    <div class="clients d-none">
         <div class="container">
             <div class="row justify-content-center clients-wrapper">
                 <div class="client">
@@ -545,7 +549,7 @@
 
     <!-- Latest-news starts
     ======================================= -->
-    <section class="latest-news section-padding">
+    <section class="latest-news section-padding d-none">
         <div class="container">
             <h2>Latest Blogs</h2>
         </div>
@@ -636,7 +640,7 @@
 
     <!-- Newsletter starts
     ======================================= -->
-    <section class="newsletter">
+    <section class="newsletter d-none">
         <div class="container">
             <h3 class="text-center">Sign up for our newsletter to stay up to
                 <br>date with tech news!</h3>
@@ -692,7 +696,7 @@
         <div class="footer-nav-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <a href="index.html" class="footer-logo">
                             <img src="images/footer-logo.png" alt="footer logo">
                         </a>
@@ -728,34 +732,34 @@
                     </div>
                     <!-- End of .col-md-3 -->
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <nav class="footer-nav">
                             <h5>Services</h5>
                             <ul class="footer-menu">
                                 <li>
-                                    <a href="logo-and-branding.html">Logo &amp; Branding</a>
+                                    <a>Logo &amp; Branding</a>
                                 </li>
                                 <li>
-                                    <a href="pay-per-click.html">Pay-Per-Click</a>
+                                    <a>Software Development</a>
                                 </li>
                                 <li>
-                                    <a href="website-design.html">Website Design</a>
+                                    <a>Website Design &amp; Development</a>
                                 </li>
                                 <li>
-                                    <a href="mobile-app-development.html">Mobile App Design</a>
+                                    <a>Mobile App Development</a>
                                 </li>
                                 <li>
-                                    <a href="search-engine-optimization.html">Search Engine Optimization </a>
+                                    <a>Search Engine Optimization </a>
                                 </li>
                                 <li>
-                                    <a href="social-media-marketing.html">Social Media Marketing</a>
+                                    <a>Social Media Marketing</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <!-- End of .col-md-3 -->
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <nav class="footer-nav">
                             <h5>Support</h5>
                             <ul class="footer-menu">
@@ -773,7 +777,7 @@
                     </div>
                     <!-- End of .col-md-3 -->
 
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <nav class="footer-nav">
                             <h5>Resources</h5>
                             <ul class="footer-menu">
@@ -794,7 +798,7 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> -->
                     <!-- End of .col-md-3 -->
                 </div>
                 <!-- End of .row -->
